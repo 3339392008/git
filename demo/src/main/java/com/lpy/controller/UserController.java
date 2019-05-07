@@ -14,6 +14,12 @@ public class UserController {
     @Autowired
      private UserService userService;
 
+    /**
+     *
+     * @param name
+     * @param password
+     * @return
+     */
     @RequestMapping("/logIn")
     public Map<String,Object> select(String name,String password){
         Map<String,Object> map = new HashMap<String,Object>();
